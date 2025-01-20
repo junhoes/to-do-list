@@ -1,18 +1,21 @@
-<div class="mainContainer">
-    <div class="date">
-        <h1 class="date--day">{{getWeekDay()}}</h1>
-        <p class="date--number">{{getSimpleDate()}}</p>
+<div class="main">
+    <div class="main__date">
+        <h1 class="main__date--day">{{getWeekDay()}}</h1>
+        <p class="main__date--number">{{getSimpleDate()}}</p>
     </div>
-    <div class="tasksContainer">
-        <ul>
-            <li *ngFor="let task of taskList; let i = index">
+    <div class="main__tasks-list">
+        <ng-container *ngFor="let task of taskList; let i = index">
+            <label class="label-container"
+            [ngClass]="{'crossed': checkedTasks[i]}"> 
                 {{task}}
-                <button class="btn" (click)="deleteTask(i)">Delete</button>
-            </li>
-        </ul>
+                <input type="checkbox" (click)="checked(i)">
+                <span class="checkmark"></span>        
+            </label>
+        </ng-container>
     </div>
-    <div class="addTask">
-        <input class="input input--new" type="text" placeholder="New task..." [(ngModel)]="newTask"/>
+    <div class="main__add-task">
+        <input class="input input--new" type="text" placeholder="New task..." (keyup.enter)="addTask()"
+            [(ngModel)]="newTask" />
         <button class="btn btn--add" type="submit" (click)="addTask()">Add new task</button>
     </div>
 </div>

@@ -15,14 +15,17 @@ export class TareasService {
     if (this.isLocalStorageAvailable()) {
       return JSON.parse(localStorage.getItem(this.localStorageKey) as string) || [];
     }
-    return []; // Devuelve un arreglo vacío si no está disponible
+    return [];
   }
 
   addTask(task: string) {
     if (this.isLocalStorageAvailable()) {
-      const tasks = this.getTasks();
-      tasks.push(task);
-      localStorage.setItem(this.localStorageKey, JSON.stringify(tasks));
+      if (task.length > 0){
+        console.log('estoy');
+        const tasks = this.getTasks();
+        tasks.push(task);
+        localStorage.setItem(this.localStorageKey, JSON.stringify(tasks));
+      }
     }
   }
 

@@ -15,6 +15,7 @@ export class AppComponent implements OnInit{
   title = 'To do list';
   taskList: string[] = [];
   newTask: string = '';
+  checkedTasks: boolean[] = [];
 
   weekDays: string[] = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
 
@@ -36,6 +37,10 @@ export class AppComponent implements OnInit{
     this._tareasService.deleteTask(index);
     this.taskList = this._tareasService.getTasks(); // actualizamos la lista de tareas
   }
+
+  checked(index: number): void {
+    this.checkedTasks[index] = !this.checkedTasks[index];
+  }  
 
   // DATE METHODS
   getWeekDay():string {
