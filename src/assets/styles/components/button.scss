@@ -1,10 +1,23 @@
 .btn{
-    background-color: #04AA6D; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    text-decoration: none;
+    font: inherit;
+    cursor: pointer;
+    &--add {
+        border-radius: 20px;
+        border: none;
+        padding: 10px;
+        background-color: $color-text;
+        color: $color-pink;
+        box-shadow: 2px 3px $color-pink;
+        margin: 0px 10px;
+        &:hover {
+            background-color: #0e1e64;
+        }
+        &:active {
+            background-color: #0e1e64;
+            box-shadow: 1px 1px #eb89aa;
+            transform: translateY(2px);
+          }
+    }
 }

@@ -22,4 +22,18 @@
         width: 90%;
         border: 1px solid $color-text;
     }
+
+    .addTask {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .tasksContainer {
+        margin: 10px 0px;
+        li {
+            list-style-type: none;
+        }
+    }
 }
