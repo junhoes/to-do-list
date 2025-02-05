@@ -1,8 +1,11 @@
 /* BASE */
 @import 'assets/styles/base/variables';
 @import 'assets/styles/base/base';
+@import 'assets/styles/base/icon-variables';
+
 
 /* COMPONENTS */
 @import 'assets/styles/components/button';
 @import 'assets/styles/components/inputs';
 @import 'assets/styles/components/checkbox.scss';
+@import 'assets/styles/components/scrollbar.scss';

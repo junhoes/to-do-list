@@ -5,11 +5,12 @@
     </div>
     <div class="main__tasks-list">
         <ng-container *ngFor="let task of taskList; let i = index">
-            <label class="label-container"
+            <label class="label-container main__tasks-list--item"
             [ngClass]="{'crossed': checkedTasks[i]}"> 
                 {{task}}
                 <input type="checkbox" (click)="checked(i)">
                 <span class="checkmark"></span>        
+                <button class="icon-trashcan delete_btn" (click)="deleteTask(i)"></button>
             </label>
         </ng-container>
     </div>
