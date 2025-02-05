@@ -1,5 +1,9 @@
 # ToDoList
 
+## 📸 Screenshots
+![Screenshot 1](src/assets/docs/Example_picture_1.png)
+![Screenshot 2](src/assets/docs/Example_picture_2.png)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.11.
 
 ## Development server
