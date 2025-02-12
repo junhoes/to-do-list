@@ -59,4 +59,15 @@
         flex-direction: row;
         justify-content: space-between;
     }
+
+    @media (max-width: 480px){
+        width: 90vw;
+        &__add-task {
+            flex-direction: column;
+            gap: 10px;
+        }
+        .delete_btn {
+            display: block;
+        }
+    }
 }

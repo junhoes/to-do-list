@@ -10,14 +10,10 @@
 }
 .input--new {
 	position: relative;
-	border-bottom: 1px solid $color-text; /* Para animación */
+	border-bottom: 1px solid $color-text;
 	transition: border 0.3s ease-in-out;
 
 	&:focus {
-		border-bottom: 2px solid $color-pink; /* Cambia de color al enfocar */
-
+		border-bottom: 2px solid $color-pink;
 	}
-  }
- 
-  .input--new:focus {
   }
