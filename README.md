@@ -10,8 +10,8 @@ A minimalistic to-do list to add and remove daily tasks.
 ### 💻 Desktop view
 ![Screenshot 1](src/assets/docs/Example_picture_1.png)
 
-Example mouse over tasks:
-![Screenshot 2](src/assets/docs/Example_picture_2.png)
+### 📱 Mobile view
+![Screenshot 1](src/assets/docs/example_picture_mobile.png)
 
 ## ✨ Features  
 - 📝 Add and remove tasks easily  
